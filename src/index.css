@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+a {
+  outline: none;
+}
+
+.active {
+  font-weight: 600;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.search-dropdown {
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+.search-dropdown-item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.search-dropdown-item:hover {
+  background-color: #f3f4f6;
+}
